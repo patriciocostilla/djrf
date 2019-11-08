@@ -6,6 +6,7 @@ urlpatterns = [
     path('snippets/', views.SnippetList.as_view(), name='snippet-list'),
     # Ex: /snippets/5
     path('snippets/<int:pk>/', views.SnippetDetail.as_view(), name='snippet-detail'),
+    path('snippets/<int:pk>/highlight', views.SnippetHighlight.as_view(), name='snippet-highlight'),
     path('users/', views.UserList.as_view(), name='user-list'),
     # Ex: /users/3
     path('users/<int:pk>/', views.UserDetail.as_view(), name='user-detail'),
